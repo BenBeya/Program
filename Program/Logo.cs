@@ -10,7 +10,7 @@ namespace Program
     {
         public void DisplayLogo()
         {
-            Console.WriteLine("  _   _ _ _ _      ");
+            Console.WriteLine(" _   __ _  ___   ");
             Console.WriteLine("| \\ | (_) | | __ _");
             Console.WriteLine("|  \\| | | | |/ _` | ");
             Console.WriteLine("| |\\  | | | | (_| | ");
