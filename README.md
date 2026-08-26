@@ -12,7 +12,7 @@ Currently has no function but its purpose will be to hold the Chatbox`s response
 
 ### Contributing
 
-
+Please follow the instructions in CONTRIBUTING.md when submitting changes or pull requests.
 
 ### License
 This version maintains the original structure while clearly presenting the new content. Each section is logically organized, ensuring that users can easily follow the instructions and understand the purpose of the project.
