@@ -32,3 +32,6 @@ This version maintains the original structure while clearly presenting the new c
 
 ### Git clone
 https://github.com/BenBeya/Program.git
+
+### Project Directory
+C:\Users\Student\source\repos\Program\
