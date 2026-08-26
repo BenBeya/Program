@@ -28,4 +28,4 @@ This version maintains the original structure while clearly presenting the new c
 - Type `hello` (case-insensitive) and press Enter to receive a greeting.
 - Type `Security` to see a placeholder response.
 
-- MIT License @2 025 /BenBeya
+- MIT License @2025 /BenBeya
