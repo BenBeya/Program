@@ -2,15 +2,19 @@
 
 namespace Program
 {
-    internal class Class2
+    internal class Chat
     {
         public void StartChat()
         {
-            Console.WriteLine("What is your name");
+            Console.WriteLine("What is your name?");
 
+            string user = Console.ReadLine();
+
+            Console.WriteLine("Hello, " + user + ".You can ask me questions about basic cybersecurity awareness and online safety tips.");
+
+
+            Console.WriteLine("Please enter a question.");
             string userInput = Console.ReadLine();
-
-            Console.WriteLine("Hello, " + userInput + ".You can ask me questions about basic cybersecurity awareness and online safety tips.");
 
             if (string.IsNullOrWhiteSpace(userInput))
             {
