@@ -10,7 +10,7 @@ Class1.cs contains the Logo class whose sole purpose is to display an ASCII art 
 ## Response.cs
  its purpose will be to hold the Chatbox`s response to the user`s inputs.
 ## Chatbot.cs
-It`s purpose it to link to response.cs and provide a clourful UI to tne user.
+It`s purpose it to link to response.cs and provide a clourful UI to the user.
 
 ### Contributing
 
