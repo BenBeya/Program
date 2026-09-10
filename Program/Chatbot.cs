@@ -7,18 +7,14 @@ namespace Program
         public void Start()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-
-            Console.WriteLine();
-            Console.WriteLine("======================================");
-            Console.WriteLine("       CYBERSECURITY AWARENESS BOT");
-            Console.WriteLine("======================================");
-
+            Console.WriteLine("==============================");
+            Console.WriteLine("   CYBERSECURITY AWARENESS BOT");
+            Console.WriteLine("==============================");
             Console.ResetColor();
 
-            Console.Write("Please enter your name: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("What is your name? ");
             string name = Console.ReadLine();
-
-            Console.WriteLine();
 
             if (string.IsNullOrWhiteSpace(name))
             {
@@ -27,42 +23,28 @@ namespace Program
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Welcome, " + name + "!");
-            Console.WriteLine("I am the Cybersecurity Awareness Bot.");
-            Console.WriteLine("I can help you with passwords, phishing, and safe browsing.");
+            Console.WriteLine("I am here to help you with cybersecurity.");
+            Console.WriteLine("You can ask me about passwords, phishing, and safe browsing.");
             Console.ResetColor();
 
             Console.WriteLine();
-            Console.WriteLine("Type your question below.");
-            Console.WriteLine("Type 'exit' to close the chatbot.");
-            Console.WriteLine();
 
-            ResponseSystem responseSystem = new ResponseSystem();
+            Response response = new Response();
 
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.Write(name + ": ");
+                string question = Console.ReadLine();
                 Console.ResetColor();
 
-                string userInput = Console.ReadLine();
-
-                if (string.IsNullOrWhiteSpace(userInput))
+                if (question.ToLower() == "exit")
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Please enter a question.");
-                    Console.ResetColor();
-                    continue;
-                }
-
-                if (userInput.ToLower() == "exit")
-                {
-                    Console.WriteLine();
                     Console.WriteLine("Goodbye, " + name + "!");
                     break;
                 }
 
-                responseSystem.GetResponse(userInput);
-                Console.WriteLine();
+                response.GetResponse(question);
             }
         }
     }

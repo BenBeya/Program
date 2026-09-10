@@ -2,7 +2,7 @@
 
 namespace Program
 {
-    class ResponseSystem
+    class Response
     {
         public void GetResponse(string userInput)
         {
