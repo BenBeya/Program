@@ -4,11 +4,13 @@
 
 A small console application that displays a logo, plays a welcome audio clip, and responds to simple user input. 
 
-## Class1.cs
+## Logo.cs
 Class1.cs contains the Logo class whose sole purpose is to display an ASCII art logo to the console.
 
-## Class2.cs
-Currently has no function but its purpose will be to hold the Chatbox`s response to the user`s inputs.
+## Response.cs
+ its purpose will be to hold the Chatbox`s response to the user`s inputs.
+## Chatbot.cs
+It`s purpose it to link to response.cs and provide a clourful UI to tne user.
 
 ### Contributing
 
