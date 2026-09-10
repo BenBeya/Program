@@ -3,7 +3,7 @@ using System.Media;
 
 namespace Program
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -19,8 +19,8 @@ namespace Program
             player.PlaySync();
 
             // Start chatbot
-            Class2 chatbot = new Class2();
-            chatbot.StartChat();
+            Chatbot chatbot = new Chatbot();
+            chatbot.Start();
         }
     }
 }
